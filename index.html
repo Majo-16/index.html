@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Página Personal</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #6200ea;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .intro {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .intro img {
+      width: 250px;
+      height: auto;
+      border-radius: 50%;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebd5a;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hola, soy Majo</h1>
+    <p>Bienvenidos a mi página personal</p>
+  </header>
+
+  <section class="intro">
+    <h2>Sobre mí</h2>
+    <p>Soy estudiante de Negocios Internacionales, explorar el mundo y pasar tiempo conmigo misma.</p>
+    
+    <img src="tu-imagen.jpg" alt="Foto personal o ilustración" />
+
+    <!-- Botón de WhatsApp -->
+    <br>
+    <a 
+      class="whatsapp-button" 
+      href="https://wa.me/521234567890?text=Hola%2C%20quiero%20saber%20más%20sobre%20ti%20%3A)" 
+      target="_blank"
+    >
+      Enviar mensaje por WhatsApp
+    </a>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Mis intereses</h2>
+    <div class="interests">
+      <div class="card">
+        <h3>Lectura</h3>
+        <p>Me gusta leer sobre desarrollo personal y crecimiento.</p>
+      </div>
+      <div class="card">
+        <h3>Viajar</h3>
+        <p>Disfruto conocer nuevas culturas y lugares.</p>
+      </div>
+      <div class="card">
+        <h3>Autocuidado</h3>
+        <p>Practico mindfulness y me encanta tener momentos a solas.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Creado con ❤️ por María José</p>
+  </footer>
+
+</body>
+</html>

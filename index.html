@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi Página Personal</title>
+  <title>Mi Página Personal - Majo</title>
+
+  <!-- Fuente juvenil desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Poppins', sans-serif;
       background-color: #f2f2f2;
       margin: 0;
       padding: 0;
@@ -15,33 +19,36 @@
     }
 
     header {
-      background-color: #6200ea;
+      background-color: #007bff;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
 
     nav {
-      background-color: #3700b3;
-      padding: 10px 0;
+      background-color: #0056b3;
+      padding: 12px 0;
       text-align: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+      margin: 0 18px;
+      font-weight: 600;
       font-size: 16px;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #bb86fc;
+      color: #aee1ff;
+    }
+
+    section {
+      padding: 50px 20px;
     }
 
     .intro {
-      padding: 40px;
       text-align: center;
     }
 
@@ -53,12 +60,12 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    .interests {
+    .interests, .services, .gallery, .testimonials {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 20px;
+      margin-top: 20px;
     }
 
     .card {
@@ -66,7 +73,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       padding: 20px;
-      width: 200px;
+      width: 220px;
       text-align: center;
     }
 
@@ -91,35 +98,63 @@
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
     }
 
-    section {
-      padding: 40px 20px;
+    h2 {
+      text-align: center;
+      color: #007bff;
+    }
+
+    .blog-post {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-weight: bold;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <header id="inicio">
-    <h1>Hola, soy Majo</h1>
-    <p>Bienvenidos a mi página personal</p>
+    <h1>Hola, soy Majo 🌸</h1>
+    <p>Bienvenidos a mi espacio personal</p>
   </header>
 
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#sobremi">Sobre mí</a>
     <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#blog">Blog</a>
+    <a href="#testimonios">Testimonios</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
   <section id="sobremi" class="intro">
     <h2>Sobre mí</h2>
-    <p>Soy estudiante de Negocios Internacionales, me gusta explorar el mundo y pasar tiempo conmigo misma.</p>
+    <p>Soy estudiante de Negocios Internacionales con una pasión por viajar, aprender y crecer como persona. Me encanta pasar tiempo conmigo misma, leer y vivir nuevas experiencias.</p>
     
     <img src="atardecer.jpg" alt="Foto personal o ilustración" />
 
-    <!-- Botón de WhatsApp -->
     <br>
     <a 
       class="whatsapp-button" 
@@ -131,39 +166,81 @@
   </section>
 
   <section id="servicios">
-    <h2 style="text-align:center;">Servicios</h2>
-    <div class="interests">
+    <h2>Servicios</h2>
+    <div class="services">
       <div class="card">
         <h3>Asesoría académica</h3>
-        <p>Apoyo en temas relacionados con negocios internacionales.</p>
+        <p>Te ayudo con tareas, exposiciones o proyectos relacionados con negocios internacionales.</p>
       </div>
       <div class="card">
-        <h3>Traducciones</h3>
-        <p>Traducción de textos inglés/español con enfoque profesional.</p>
+        <h3>Traducción</h3>
+        <p>Traducción profesional de textos inglés ↔ español.</p>
       </div>
       <div class="card">
-        <h3>Consultoría personal</h3>
-        <p>Recomendaciones de libros y hábitos de autocuidado.</p>
+        <h3>Consultas personales</h3>
+        <p>¿Buscas recomendaciones de libros o rutinas de autocuidado? ¡Te puedo orientar!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <div class="card"><img src="foto1.jpg" alt="Foto 1" style="width:100%; border-radius:8px;"><p>Mis viajes</p></div>
+      <div class="card"><img src="foto2.jpg" alt="Foto 2" style="width:100%; border-radius:8px;"><p>Mis momentos favoritos</p></div>
+      <div class="card"><img src="foto3.jpg" alt="Foto 3" style="width:100%; border-radius:8px;"><p>Mi inspiración</p></div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="blog-post">
+      <h3>✨ Cómo aprendí a disfrutar mi compañía</h3>
+      <p>En este post te cuento cómo pasé de tener miedo a la soledad a amarla y valorarla como parte esencial de mi bienestar.</p>
+    </div>
+    <div class="blog-post">
+      <h3>🌍 Mis tips para viajar sola</h3>
+      <p>Consejos prácticos y emocionales para lanzarte a la aventura contigo misma.</p>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="testimonials">
+      <div class="card">
+        <p>"Majo me ayudó a entender temas que no comprendía en la universidad. ¡Súper paciente y clara!"</p>
+        <strong>- Ana G.</strong>
+      </div>
+      <div class="card">
+        <p>"Sus traducciones son impecables. Muy recomendable si necesitas algo profesional."</p>
+        <strong>- Luis R.</strong>
       </div>
     </div>
   </section>
 
   <section id="contacto">
-    <h2 style="text-align:center;">Contacto</h2>
-    <p style="text-align:center;">Puedes escribirme por WhatsApp si deseas más información.</p>
+    <h2>Contacto</h2>
+    <p style="text-align:center;">¿Quieres platicar conmigo o saber más de mis servicios? Estoy disponible en WhatsApp.</p>
     <div style="text-align:center;">
       <a 
         class="whatsapp-button" 
         href="https://wa.me/525512345678?text=Hola%2C%20me%20gustaría%20contactarte." 
         target="_blank"
       >
-        Enviar mensaje por WhatsApp
+        Escribir por WhatsApp
       </a>
+    </div>
+
+    <div class="social-links">
+      <p>Sígueme también en mis redes:</p>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">TikTok</a>
     </div>
   </section>
 
   <footer>
-    <p>Creado con ❤️ por María José</p>
+    <p>Creado con 💙 por María José - 2025</p>
   </footer>
 
 </body>

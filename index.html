@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       color: #333;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -18,6 +19,25 @@
       color: white;
       padding: 20px;
       text-align: center;
+    }
+
+    nav {
+      background-color: #3700b3;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #bb86fc;
     }
 
     .intro {
@@ -73,18 +93,29 @@
       text-align: center;
       padding: 10px;
     }
+
+    section {
+      padding: 40px 20px;
+    }
   </style>
 </head>
 <body>
 
-  <header>
+  <header id="inicio">
     <h1>Hola, soy Majo</h1>
     <p>Bienvenidos a mi página personal</p>
   </header>
 
-  <section class="intro">
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobremi">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobremi" class="intro">
     <h2>Sobre mí</h2>
-    <p>Soy estudiante de Negocios Internacionales, explorar el mundo y pasar tiempo conmigo misma.</p>
+    <p>Soy estudiante de Negocios Internacionales, me gusta explorar el mundo y pasar tiempo conmigo misma.</p>
     
     <img src="atardecer.jpg" alt="Foto personal o ilustración" />
 
@@ -99,21 +130,35 @@
     </a>
   </section>
 
-  <section>
-    <h2 style="text-align:center;">Mis intereses</h2>
+  <section id="servicios">
+    <h2 style="text-align:center;">Servicios</h2>
     <div class="interests">
       <div class="card">
-        <h3>Lectura</h3>
-        <p>Me gusta leer sobre desarrollo personal y crecimiento.</p>
+        <h3>Asesoría académica</h3>
+        <p>Apoyo en temas relacionados con negocios internacionales.</p>
       </div>
       <div class="card">
-        <h3>Viajar</h3>
-        <p>Disfruto conocer nuevas culturas y lugares.</p>
+        <h3>Traducciones</h3>
+        <p>Traducción de textos inglés/español con enfoque profesional.</p>
       </div>
       <div class="card">
-        <h3>Autocuidado</h3>
-        <p>Practico mindfulness y me encanta tener momentos a solas.</p>
+        <h3>Consultoría personal</h3>
+        <p>Recomendaciones de libros y hábitos de autocuidado.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2 style="text-align:center;">Contacto</h2>
+    <p style="text-align:center;">Puedes escribirme por WhatsApp si deseas más información.</p>
+    <div style="text-align:center;">
+      <a 
+        class="whatsapp-button" 
+        href="https://wa.me/525512345678?text=Hola%2C%20me%20gustaría%20contactarte." 
+        target="_blank"
+      >
+        Enviar mensaje por WhatsApp
+      </a>
     </div>
   </section>
 
